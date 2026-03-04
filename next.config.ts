@@ -27,12 +27,12 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/new-page",
-        destination: "/about",
+        destination: "/team",
         permanent: true,
       },
       {
         source: "/new-page-1",
-        destination: "/portfolio",
+        destination: "/our-portfolio",
         permanent: true,
       },
       {
@@ -42,7 +42,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/new-page-3",
-        destination: "/locations",
+        destination: "/kerrville",
         permanent: true,
       },
       // If Squarespace had /home as a separate URL
