@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "kerrville",
+    "city": "Kerrville",
+    "state": "TX",
+    "description": "Kerrville, Texas, is a picturesque town in the heart of the Hill Country, known for its rich history, outdoor adventures, and cultural attractions. Famous for its scenic beauty along the Guadalupe River, Kerrville is a hub for outdoor activities like hiking, fishing, and camping. The town is also home to the Museum of Western Art and the renowned Kerrville Folk Festival.",
+    "builderPitch": "Welcome to the height of luxury home building in Kerrville, where our custom homes reflect unmatched craftsmanship and forward-thinking design. Each residence is thoughtfully constructed to capture the essence of Texas Hill Country living, with meticulous attention to detail and architectural innovation.",
+    "highlights": [
+      "Guadalupe River frontage",
+      "Kerrville-Schreiner Park",
+      "Museum of Western Art",
+      "Kerrville Folk Festival",
+      "Local wineries and art galleries",
+      "Hill Country views"
+    ],
+    "heroImage": "/images/locations/kerrville-hero.jpg"
+  },
+  {
+    "slug": "boerne",
+    "city": "Boerne",
+    "state": "TX",
+    "description": "Nestled in the heart of the scenic Texas Hill Country, Boerne offers a unique blend of small-town charm and modern amenities. Known for its picturesque landscapes and rich cultural heritage, Boerne is a haven for nature lovers and outdoor enthusiasts. The historic downtown area is lined with quaint shops, gourmet restaurants, and art galleries. Home to top-rated schools and a robust local economy.",
+    "builderPitch": "Welcome to the pinnacle of luxury home building in Boerne. Our custom homes are a testament to unrivaled craftsmanship and cutting-edge design, embodying the very essence of Texas Hill Country elegance. Whether overlooking the serene Cibolo Creek or the picturesque landscapes of Boerne, our homes are designed for those who demand nothing but the best.",
+    "highlights": [
+      "Historic downtown Hauptstrasse",
+      "Top-rated school districts",
+      "Cibolo Nature Center",
+      "Boerne Berges Fest",
+      "30 minutes to San Antonio",
+      "Growing luxury market"
+    ],
+    "heroImage": "/images/locations/boerne-hero.jpg"
+  },
+  {
+    "slug": "comfort",
+    "city": "Comfort",
+    "state": "TX",
+    "description": "Comfort, Texas, is a quaint Hill Country gem offering rich history, scenic beauty, and a welcoming small-town atmosphere. Established in 1854, the town is renowned for its preserved historic district, where over 100 buildings date back to the 19th century. Comfort offers antique shopping, wine tasting, and exploring the natural beauty of nearby parks like James Kiehl River Bend Park along the Guadalupe River.",
+    "builderPitch": "This is the pinnacle of luxury home building in Comfort, Texas. Our custom homes are a true reflection of exceptional craftsmanship and innovative design, capturing the essence of Hill Country elegance. Whether framing breathtaking views of Cypress Creek or nestled in the scenic landscapes of the Texas Hill Country, our residences are crafted for those who expect nothing less than perfection.",
+    "highlights": [
+      "Preserved 19th-century historic district",
+      "James Kiehl River Bend Park",
+      "Guadalupe River access",
+      "Antique shopping and wine tasting",
+      "Christmas in Comfort celebration",
+      "Rural privacy with character"
+    ],
+    "heroImage": "/images/locations/comfort-hero.jpg"
+  },
+  {
+    "slug": "bandera",
+    "city": "Bandera",
+    "state": "TX",
+    "description": "Nestled in the heart of the Texas Hill Country, Bandera County is a picturesque haven renowned for its breathtaking landscapes and rich cowboy heritage. Lakehills, the largest community in Bandera County, sits beside the picturesque Medina Lake. The Bandera River flows through the city, which is home to the annual Bandera Riverfest. The county also boasts the Hill Country State Natural Area.",
+    "builderPitch": "Welcome to the pinnacle of luxury home building in Bandera, Texas. Our custom homes are a testament to unrivaled craftsmanship and cutting-edge luxury design, embodying the very essence of Texas Hill Country elegance. Whether overlooking the serene Medina Lake or the picturesque landscapes of Bandera, our homes are designed for those who demand nothing but the best.",
+    "highlights": [
+      "Cowboy Capital of the World",
+      "Medina Lake waterfront",
+      "Hill Country State Natural Area",
+      "Annual Bandera Riverfest",
+      "Ranch and equestrian properties",
+      "Ultramarathon trail running"
+    ],
+    "heroImage": "/images/locations/bandera-hero.jpg"
+  }
+]

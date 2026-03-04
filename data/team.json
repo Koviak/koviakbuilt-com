@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Joshua Koviak",
+    "role": "Owner & Founder",
+    "bio": "Joshua Koviak's path to founding Koviak Built is marked by a deep-rooted passion for design and a steadfast dedication to crafting architecturally significant luxury homes. A Texas A&M graduate, his early career as a realtor provided invaluable insights into what transforms a structure into a beloved home. Embracing the complexity of innovative design, Joshua collaborates with expert builders in Bandera and Boerne, Texas, to create homes that are as unique as their owners, often taking on projects shunned by others for their architectural challenges.",
+    "email": "josh@koviakbuilt.com",
+    "photo": "/images/team/joshua-koviak.jpg"
+  },
+  {
+    "name": "Caleb Pistone",
+    "role": "Owner",
+    "bio": "Caleb Pistone's ascent to co-ownership of Koviak Built in 2022 marked a significant milestone in the company's journey towards excellence in luxury home construction. His exceptional project management and team leadership skills have been instrumental in streamlining operations and reinforcing the brand's commitment to architectural innovation and quality.",
+    "email": "",
+    "photo": "/images/team/caleb-pistone.jpg"
+  },
+  {
+    "name": "Josh Pistone",
+    "role": "Owner",
+    "bio": "Joshua Pistone's journey with Koviak Built began in 2022, bringing a fresh perspective and dynamic approach to the company as a co-owner. His focus on job estimation, business marketing, and growth strategy has been pivotal in propelling the brand to new heights in the luxury home sector.",
+    "email": "",
+    "photo": "/images/team/josh-pistone.jpg"
+  },
+  {
+    "name": "John Brown",
+    "role": "Project Manager",
+    "bio": "John Brown is the cornerstone of Koviak Built's project management team, ensuring every build is executed precisely and efficiently. With a sharp eye for quality and a systematic approach, John ensures that each phase of our projects runs smoothly.",
+    "email": "",
+    "photo": "/images/team/john-brown.jpg"
+  },
+  {
+    "name": "Kaylan Koviak",
+    "role": "Operations & Logistics",
+    "bio": "Kaylan Koviak plays a pivotal role in the company's operations, assisting the team with moving materials and helping whenever the complexity of a project needs an extra set of skilled hands. With her fun-loving spirit and an unmatched knack for organization, Kaylan keeps the team running smoothly.",
+    "email": "",
+    "photo": "/images/team/kaylan-koviak.jpg"
+  },
+  {
+    "name": "Emma Pistone",
+    "role": "Marketing Manager",
+    "bio": "Emma Pistone brings a unique blend of creativity and technical expertise to Koviak Built, where she oversees SEO strategies, social media marketing, and the integration of AI technologies. Her dedication to continuous learning and ability to stay ahead of digital trends make her an invaluable asset.",
+    "email": "",
+    "photo": "/images/team/emma-pistone.jpg"
+  }
+]

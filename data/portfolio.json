@@ -1,0 +1,96 @@
+[
+  {
+    "slug": "dogtrot-cabin",
+    "title": "Dogtrot Cabin",
+    "location": "Bandera, TX",
+    "description": "Dogtrot Cabin redefines hilltop luxury with its blend of traditional German fachwerk and contemporary design. Perched atop a scenic vantage point, this retreat offers 360-degree views, inviting nature's grandeur into every room. The layout is a modern interpretation of classic architecture, featuring two wings connected by a versatile breezeway that can be fully opened or closed for comfort.",
+    "coverImage": "/images/portfolio/dogtrot-cabin/cover.jpg",
+    "images": [
+      "/images/portfolio/dogtrot-cabin/1.jpg",
+      "/images/portfolio/dogtrot-cabin/2.jpg"
+    ],
+    "sqft": "",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "year": ""
+  },
+  {
+    "slug": "agua-vista-ranch",
+    "title": "Agua Vista Ranch",
+    "location": "Bandera, TX",
+    "description": "Agua Vista Ranch stands as a beacon of luxury amidst the rolling hills and spring-fed waters of Texas Hill Country. This waterfront estate seamlessly blends Californian modernity with Texan elegance, offering panoramic views that celebrate the natural beauty of its over one-hundred-acre surroundings. With its expansive windows and open design, the home captures the essence of indoor-outdoor living.",
+    "coverImage": "/images/portfolio/agua-vista-ranch/cover.jpg",
+    "images": [
+      "/images/portfolio/agua-vista-ranch/1.jpg",
+      "/images/portfolio/agua-vista-ranch/2.jpg",
+      "/images/portfolio/agua-vista-ranch/3.jpg",
+      "/images/portfolio/agua-vista-ranch/4.jpg",
+      "/images/portfolio/agua-vista-ranch/5.jpg",
+      "/images/portfolio/agua-vista-ranch/6.jpg",
+      "/images/portfolio/agua-vista-ranch/7.jpg",
+      "/images/portfolio/agua-vista-ranch/8.jpg",
+      "/images/portfolio/agua-vista-ranch/9.jpg"
+    ],
+    "sqft": "",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "year": ""
+  },
+  {
+    "slug": "the-outpost",
+    "title": "The Outpost",
+    "location": "Comfort, TX",
+    "description": "Discover the Outpost, a unique architectural masterpiece, seamlessly integrating modern living with the tranquility of nature. This serene compound, nestled within a live oak grove in Comfort, Texas, features a trio of buildings dedicated to living, cooking and dining, restful sleep, and practical luxury. An AIA award finalist.",
+    "coverImage": "/images/portfolio/the-outpost/cover.jpg",
+    "images": [
+      "/images/portfolio/the-outpost/1.jpg",
+      "/images/portfolio/the-outpost/2.jpg",
+      "/images/portfolio/the-outpost/3.jpg",
+      "/images/portfolio/the-outpost/4.jpg",
+      "/images/portfolio/the-outpost/5.jpg",
+      "/images/portfolio/the-outpost/6.jpg",
+      "/images/portfolio/the-outpost/7.jpg",
+      "/images/portfolio/the-outpost/8.jpg"
+    ],
+    "sqft": "",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "year": ""
+  },
+  {
+    "slug": "h2-lodge",
+    "title": "H2 Lodge",
+    "location": "Pipe Creek, TX",
+    "description": "This exquisite ranch in Pipe Creek, Texas, blends state-of-the-art building science with authentic materials reminiscent of a historic Western hotel and saloon. Combining modern amenities with rustic charm, the design features elements like intentionally squeaky floorboards that evoke the nostalgia of a bygone era. Every detail reflects Koviak Built's dedication to creating bespoke legacies.",
+    "coverImage": "/images/portfolio/h2-lodge/cover.jpg",
+    "images": [
+      "/images/portfolio/h2-lodge/1.jpg",
+      "/images/portfolio/h2-lodge/2.jpg"
+    ],
+    "sqft": "",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "year": ""
+  },
+  {
+    "slug": "alta-luz",
+    "title": "Alta Luz",
+    "location": "Fredericksburg, TX",
+    "description": "Nestled atop a serene wooded hill, Alta Luz stands as a modern marvel, seamlessly integrating into the natural landscape. This exquisite guest house is a testament to innovative architectural design, where the unique geometric exterior not only captivates but also cleverly conceals the entrance, creating an intriguing interplay of form and function.",
+    "coverImage": "/images/portfolio/alta-luz/cover.jpg",
+    "images": [
+      "/images/portfolio/alta-luz/1.jpg",
+      "/images/portfolio/alta-luz/2.jpg",
+      "/images/portfolio/alta-luz/3.jpg",
+      "/images/portfolio/alta-luz/4.jpg",
+      "/images/portfolio/alta-luz/5.jpg",
+      "/images/portfolio/alta-luz/6.jpg",
+      "/images/portfolio/alta-luz/7.jpg",
+      "/images/portfolio/alta-luz/8.jpg"
+    ],
+    "sqft": "",
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "year": ""
+  }
+]

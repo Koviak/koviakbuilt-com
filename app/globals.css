@@ -1,26 +1,236 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ============================================================
+   Koviak Built - Luxury Home Builder Brand Theme
+   Tailwind CSS v4 configuration via @theme
+   ============================================================ */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* --- Brand Colors --- */
+  --color-background: #1a1a1a;
+  --color-foreground: #f5f0e8;
+  --color-card: #2a2a2a;
+  --color-card-foreground: #f5f0e8;
+
+  --color-copper: #b87333;
+  --color-copper-light: #d4956a;
+  --color-copper-dark: #8a5526;
+
+  --color-gold: #c9a227;
+  --color-gold-light: #e0c068;
+  --color-gold-dark: #9a7b1a;
+
+  --color-cream: #f5f0e8;
+  --color-charcoal: #1a1a1a;
+
+  --color-muted: #3a3a3a;
+  --color-muted-foreground: #a8a29e;
+
+  --color-border: #3a3a3a;
+  --color-ring: #b87333;
+
+  /* --- Font Families --- */
+  --font-playfair: "Playfair Display", Georgia, serif;
+  --font-lato: "Lato", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: var(--font-lato);
+
+  /* --- Animations --- */
+  --animate-fade-in: fade-in 0.6s ease-out forwards;
+  --animate-slide-up: slide-up 0.6s ease-out forwards;
+  --animate-slide-in-right: slide-in-right 0.6s ease-out forwards;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* --- Keyframes --- */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ============================================================
+   Base Styles
+   ============================================================ */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-lato);
+  line-height: 1.7;
+  min-height: 100dvh;
+}
+
+/* ============================================================
+   Custom Scrollbar (Webkit)
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3a3a3a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b87333;
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3a3a3a #1a1a1a;
+}
+
+/* ============================================================
+   Typography
+   ============================================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-cream);
+}
+
+h1 {
+  font-size: clamp(2.25rem, 5vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+}
+
+p {
+  font-family: var(--font-lato);
+}
+
+/* ============================================================
+   Selection
+   ============================================================ */
+::selection {
+  background-color: rgba(184, 115, 51, 0.3);
+  color: #f5f0e8;
+}
+
+/* ============================================================
+   Focus Styles (Accessibility)
+   ============================================================ */
+:focus-visible {
+  outline: 2px solid var(--color-copper);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   Utility Classes
+   ============================================================ */
+
+/* Gradient text for accent headings */
+.text-gradient-copper {
+  background: linear-gradient(135deg, #b87333, #c9a227);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Copper underline accent */
+.accent-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.accent-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #b87333, #c9a227);
+  border-radius: 2px;
+}
+
+/* Glass card effect */
+.glass-card {
+  background: rgba(42, 42, 42, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(184, 115, 51, 0.15);
+}
+
+/* Hover lift effect */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Image overlay for portfolio cards */
+.image-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(26, 26, 26, 0.8) 0%,
+    rgba(26, 26, 26, 0) 50%
+  );
+  pointer-events: none;
+}
+
+/* Stagger animation delays */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+.stagger-5 { animation-delay: 0.5s; }
+.stagger-6 { animation-delay: 0.6s; }

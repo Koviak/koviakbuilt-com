@@ -1,65 +1,182 @@
-import Image from "next/image";
+import Link from 'next/link';
+import HeroVideo from '@/components/HeroVideo';
+import ImageCarousel from '@/components/ImageCarousel';
+import ProjectCard from '@/components/ProjectCard';
+import SectionHeading from '@/components/SectionHeading';
+import { getAllProjects } from '@/lib/portfolio';
+import locationsData from '@/data/locations.json';
+import { MapPinIcon, CheckBadgeIcon, EyeIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
 
-export default function Home() {
+const CAROUSEL_IMAGES = [
+  '/images/home/carousel-1.jpg',
+  '/images/home/carousel-2.jpg',
+  '/images/home/carousel-3.jpg',
+  '/images/home/carousel-4.jpg',
+  '/images/home/carousel-5.jpg',
+];
+
+const FEATURES = [
+  {
+    icon: CheckBadgeIcon,
+    title: 'Experience',
+    description:
+      'Over 15 years of luxury home building in the Texas Hill Country. We know the land, the climate, and the craftsmanship required to build homes that endure.',
+  },
+  {
+    icon: WrenchScrewdriverIcon,
+    title: 'Craftsmanship',
+    description:
+      'Every detail matters. From the foundation to the finish, we use premium materials and work with the finest tradespeople in the region.',
+  },
+  {
+    icon: EyeIcon,
+    title: 'Transparency',
+    description:
+      'Real-time project updates through BuilderTrend, detailed budgeting, and open communication at every stage. No surprises, only trust.',
+  },
+] as const;
+
+export default function HomePage() {
+  const projects = getAllProjects();
+  const featuredProjects = projects.slice(0, 3);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      {/* Hero */}
+      <HeroVideo />
+
+      {/* Why Koviak Built */}
+      <section className="py-24 lg:py-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            title="Why Koviak Built"
+            subtitle="We don't just build houses. We craft homes that reflect your vision, honor the landscape, and stand the test of time."
+          />
+          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3">
+            {FEATURES.map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <div
+                  key={feature.title}
+                  className={`group rounded-lg border border-white/5 bg-card p-8 transition-all duration-500 hover:border-copper/30 hover:shadow-lg hover:shadow-copper/5 stagger-${index + 1}`}
+                >
+                  <div className="flex h-14 w-14 items-center justify-center rounded-lg bg-copper/10">
+                    <Icon className="h-7 w-7 text-copper" />
+                  </div>
+                  <h3 className="mt-6 font-playfair text-xl font-bold text-cream">
+                    {feature.title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-cream/60">
+                    {feature.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+      </section>
+
+      {/* Image Carousel */}
+      <section className="py-16 lg:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            title="Our Craftsmanship"
+            subtitle="A glimpse into the quality and attention to detail that defines every Koviak Built home."
+          />
+          <div className="mt-12">
+            <ImageCarousel
+              images={CAROUSEL_IMAGES}
+              alt="Koviak Built luxury home"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Featured Projects */}
+      <section className="bg-[#151515] py-24 lg:py-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            title="Featured Projects"
+            subtitle="Explore some of our finest custom homes throughout the Texas Hill Country."
+          />
+          <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {featuredProjects.map((project) => (
+              <ProjectCard key={project.slug} project={project} />
+            ))}
+          </div>
+          <div className="mt-12 text-center">
+            <Link
+              href="/our-portfolio"
+              className="inline-flex items-center rounded-sm border border-copper px-8 py-3.5 text-sm font-semibold uppercase tracking-wider text-copper transition-all duration-300 hover:bg-copper hover:text-white"
+            >
+              View All Projects
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Locations We Serve */}
+      <section className="py-24 lg:py-32">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            title="Locations We Serve"
+            subtitle="Building luxury custom homes across the Texas Hill Country's most desirable communities."
+          />
+          <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {locationsData.map((location) => (
+              <Link
+                key={location.slug}
+                href={`/${location.slug}`}
+                className="group rounded-lg border border-white/5 bg-card p-6 transition-all duration-500 hover:border-copper/30 hover:shadow-lg hover:shadow-copper/5"
+              >
+                <div className="flex items-center gap-3">
+                  <MapPinIcon className="h-5 w-5 text-copper" />
+                  <h3 className="font-playfair text-lg font-bold text-cream transition-colors group-hover:text-copper">
+                    {location.city}
+                  </h3>
+                </div>
+                <p className="mt-1 text-xs uppercase tracking-wider text-gold">
+                  {location.state}
+                </p>
+                <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-cream/50">
+                  {location.description}
+                </p>
+                <span className="mt-4 inline-block text-xs font-medium text-copper opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  Learn More &rarr;
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="relative overflow-hidden py-24 lg:py-32">
+        <div className="absolute inset-0 bg-gradient-to-br from-copper/10 via-transparent to-gold/5" />
+        <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="font-playfair text-3xl font-bold text-cream sm:text-4xl lg:text-5xl">
+            Ready to Build Your Dream Home?
+          </h2>
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-cream/60">
+            Let&apos;s start a conversation about your vision. From the first sketch to the final
+            walkthrough, we&apos;re with you every step of the way.
+          </p>
+          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+            <Link
+              href="/contact"
+              className="inline-flex items-center rounded-sm bg-copper px-8 py-4 text-sm font-semibold uppercase tracking-wider text-white transition-all duration-300 hover:bg-copper-light"
+            >
+              Start Your Project
+            </Link>
+            <a
+              href="tel:+18302412660"
+              className="inline-flex items-center rounded-sm border border-cream/30 px-8 py-4 text-sm font-semibold uppercase tracking-wider text-cream transition-all duration-300 hover:border-copper hover:text-copper"
+            >
+              Call (830) 241-2660
+            </a>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

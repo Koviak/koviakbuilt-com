@@ -1,0 +1,20 @@
+{
+  "name": "KOVIAK BUILT",
+  "tagline": "Luxury Custom Homes in the Texas Hill Country",
+  "description": "Discover custom-built homes where unparalleled luxury meets unparalleled ambition. Our luxury designs are the perfect fusion of build science and architectural mastery, creating personalized spaces that are masterpieces of functional beauty.",
+  "phone": "(830) 241-2660",
+  "email": "sales@koviakbuilt.com",
+  "address": {
+    "street": "6150 TX-16",
+    "city": "Pipe Creek",
+    "state": "TX",
+    "zip": "78063"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/koviakbuilthomes/",
+    "instagram": "https://www.instagram.com/koviak_built/"
+  },
+  "locations": ["Kerrville", "Boerne", "Comfort", "Bandera"],
+  "logo": "/images/logo.png",
+  "quote": "Take the best that exists and make it better. When it does not exist, design it."
+}
