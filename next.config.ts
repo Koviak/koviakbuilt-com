@@ -45,10 +45,10 @@ const nextConfig: NextConfig = {
         destination: "/locations",
         permanent: true,
       },
-      // Catch-all for any /blog/ paths from Squarespace
+      // If Squarespace had /home as a separate URL
       {
-        source: "/blog/:slug",
-        destination: "/insights/:slug",
+        source: "/home",
+        destination: "/",
         permanent: true,
       },
     ];
@@ -87,7 +87,7 @@ const nextConfig: NextConfig = {
             key: "Content-Security-Policy",
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com",
+              "script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://challenges.cloudflare.com",
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "img-src 'self' data: blob: https://images.squarespace-cdn.com https://images.unsplash.com",
               "font-src 'self' https://fonts.gstatic.com",
