@@ -6,8 +6,7 @@
     "description": "Dogtrot Cabin redefines hilltop luxury with its blend of traditional German fachwerk and contemporary design. Perched atop a scenic vantage point, this retreat offers 360-degree views, inviting nature's grandeur into every room. The layout is a modern interpretation of classic architecture, featuring two wings connected by a versatile breezeway that can be fully opened or closed for comfort.",
     "coverImage": "/images/portfolio/dogtrot-cabin/cover.jpg",
     "images": [
-      "/images/portfolio/dogtrot-cabin/1.jpg",
-      "/images/portfolio/dogtrot-cabin/2.jpg"
+      "/images/portfolio/dogtrot-cabin/1.png"
     ],
     "sqft": "",
     "bedrooms": 0,
@@ -29,7 +28,8 @@
       "/images/portfolio/agua-vista-ranch/6.jpg",
       "/images/portfolio/agua-vista-ranch/7.jpg",
       "/images/portfolio/agua-vista-ranch/8.jpg",
-      "/images/portfolio/agua-vista-ranch/9.jpg"
+      "/images/portfolio/agua-vista-ranch/9.jpg",
+      "/images/portfolio/agua-vista-ranch/10.jpg"
     ],
     "sqft": "",
     "bedrooms": 0,
@@ -48,9 +48,10 @@
       "/images/portfolio/the-outpost/3.jpg",
       "/images/portfolio/the-outpost/4.jpg",
       "/images/portfolio/the-outpost/5.jpg",
-      "/images/portfolio/the-outpost/6.jpg",
+      "/images/portfolio/the-outpost/6.png",
       "/images/portfolio/the-outpost/7.jpg",
-      "/images/portfolio/the-outpost/8.jpg"
+      "/images/portfolio/the-outpost/8.jpg",
+      "/images/portfolio/the-outpost/9.jpg"
     ],
     "sqft": "",
     "bedrooms": 0,
@@ -86,7 +87,8 @@
       "/images/portfolio/alta-luz/5.jpg",
       "/images/portfolio/alta-luz/6.jpg",
       "/images/portfolio/alta-luz/7.jpg",
-      "/images/portfolio/alta-luz/8.jpg"
+      "/images/portfolio/alta-luz/8.jpg",
+      "/images/portfolio/alta-luz/9.jpg"
     ],
     "sqft": "",
     "bedrooms": 0,

@@ -7,13 +7,11 @@ import { getAllProjects } from '@/lib/portfolio';
 import locationsData from '@/data/locations.json';
 import { MapPinIcon, CheckBadgeIcon, EyeIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
 
-const CAROUSEL_IMAGES = [
-  '/images/home/carousel-1.jpg',
-  '/images/home/carousel-2.jpg',
-  '/images/home/carousel-3.jpg',
-  '/images/home/carousel-4.jpg',
-  '/images/home/carousel-5.jpg',
-];
+const CAROUSEL_IMAGES = Array.from({ length: 43 }, (_, i) => {
+  const n = i + 1;
+  const ext = n === 1 ? 'jpeg' : 'jpg';
+  return `/images/home/${n}.${ext}`;
+});
 
 const FEATURES = [
   {
